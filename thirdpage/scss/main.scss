@@ -1,0 +1,271 @@
+@import "header";
+@import "footer";
+
+/********/
+
+$dark:#000000;
+
+$white:#ffffff;
+
+@mixin onlylarge($w)
+{
+	@media only screen and (max-width:$w){
+		@content
+	}
+}
+
+
+.container-one{
+    margin-top: 100px;
+    font-family: 'DM Sans'; 
+    display: flex;
+    justify-content: space-between;
+    @include onlylarge(1300px){
+        width: 95%;
+      }  
+
+      @include onlylarge(1140px){
+        flex-direction: column;
+        margin-top: 50px;
+      }  
+    .left-side{
+        width: 600px;
+        height: 770px;
+        @include onlylarge(1140px){
+            width: 100%;
+            height: 600px;
+          }  
+        img{
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+
+    .right-side{
+        @include onlylarge(1140px){
+            margin-top: 30px;
+          }  
+        h3{
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 45px; 
+        }
+
+        .txt{
+            display: flex;
+            margin-top: 16px;
+            align-items: center;
+            .descr-one{
+                width: 60px;
+                font-weight: 700;
+                font-size: 11px;
+                line-height: 14px;
+                color:#45B26B ;
+                border: 1px solid #45B26B; 
+                padding-top: 6px;
+                padding-bottom: 6px;
+                text-align: center;
+                border-radius: 10px;
+
+            }
+
+            .descr-two{
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 17px;
+                color:#666666 ; 
+                padding-left: 10px;
+            }
+        }
+
+        .descr-three{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 26px;
+            color: $dark;
+            margin-top: 16px;
+            
+        }
+
+        .descr-four{
+            width: 470px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #888888; 
+            margin-top: 21px;
+            @include onlylarge(1140px){
+                width: 100%;
+              }  
+        }
+
+        .txt-two{
+            margin-top: 25px;
+            .descr-five{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                color: #000000; 
+                margin-bottom: 13px;
+            }
+
+            .txt-person{
+                display: flex;
+                align-items: center;
+                .descr-six{
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $dark; 
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .txt-three{
+            width: 470px;
+            border: 1px solid #888888;
+            border-radius: 10px;
+            display: flex;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            margin-top: 20px;
+            @include onlylarge(1140px){
+                width: 100%;
+                display: flex;
+                justify-content: center;
+              }  
+            .descr{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                color: #888888; 
+                transition: 0.8s;
+                cursor: pointer;
+            }
+
+            .descr:hover{
+                width: 61px;
+                background:#3772FF ;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                color: $white;
+                text-align: center;
+                border-radius: 10px;
+            }
+
+            .one{
+                margin-left: 10px;
+                @include onlylarge(1140px){
+                    margin-left: 0;
+                  }  
+            }
+
+            .two{
+                margin-left: 24px;
+                @include onlylarge(1140px){
+                    margin-left: 20px;
+                  }  
+            }
+
+            .three{
+                margin-left:37px ;
+                @include onlylarge(1140px){
+                     margin-left: 20px;
+                  }  
+            }
+        }
+
+        .person{
+            margin-top: 30px;
+            .first{
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                .info{
+                    width: 238px;
+                    margin-left: 14px;
+                    @include onlylarge(768px){
+                        width: 100%;
+                      }  
+                    .info-1{
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 17px;
+                        color: #666666; 
+                        span{
+                            font-weight: bold;
+                            color: $dark;
+                        }
+                    }
+                }
+            }
+        }
+
+        .button-info{
+            width: 420px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 35px;
+            @include onlylarge(1140px){
+                width: 100%;
+              }  
+              @include onlylarge(600px){
+                flex-direction: column;
+              }  
+            .second-form{
+                button{
+                    width: 200px;
+                    background: #3772FF;
+                    border-radius: 7px; 
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $white; 
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    transition: 0.8s;
+                    cursor: pointer;
+                    border: none;
+                    @include onlylarge(600px){
+                        margin-bottom: 20px;
+                        width: 100%;
+                      }  
+                }
+
+                button:hover{
+                    background: $dark;
+                }
+            }
+
+            .first-form{
+                button{
+                    width: 200px;
+                    background: $dark;
+                    border-radius: 7px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    transition: 0.8s;
+                    cursor: pointer;
+                    border: none; 
+                    color: $white;
+                    @include onlylarge(600px){
+                        width: 100%;
+                      }  
+                }
+
+                button:hover{
+                    background: #3772FF;
+                }
+            }
+        }
+
+    }
+}

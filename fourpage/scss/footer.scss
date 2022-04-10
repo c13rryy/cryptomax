@@ -1,0 +1,154 @@
+/* footer */
+
+.footer{
+    font-family: 'DM Sans';
+    @include onlylarge(1300px){
+      width: 95%;
+    } 
+    .all-bloks{
+      display: flex;
+      justify-content: space-between;
+      @include onlylarge(1024px){
+        flex-direction: column;
+      } 
+      .first-block{
+        margin-top: 89px;
+        @include onlylarge(1024px){
+          margin-top: 50px;
+        } 
+        .logo{
+          margin-bottom: 30px;
+          @include onlylarge(1024px){
+            margin-bottom: 20px;
+          } 
+  
+        }
+        .txt-one{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%; 
+          color: #888888;
+          width: 270px;
+          margin-bottom: 29px;
+        }
+      }
+  
+      .second-block{
+        margin-top: 109px;
+        @include onlylarge(1024px){
+          margin-top: 20px;
+        } 
+        ul{
+          li{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 176%;
+            color: #888888; 
+            a{
+              text-decoration: none;
+              color: #888888;
+              transition: 0.8s;
+              cursor: pointer;
+            }
+            a:hover{
+              color: #000000;
+            }
+          }
+  
+          .word{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            color: #000000;  
+            margin-bottom: 42px; 
+            @include onlylarge(1024px){
+              margin-bottom: 20px;
+            } 
+            a{
+              color: #000000;
+            }   
+          }
+        }
+      }
+  
+      .third-block{
+        margin-top: 109px;
+        @include onlylarge(1024px){
+          margin-top: 20px;
+        } 
+        h3{
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 150%;
+          color: #000000; 
+          margin-bottom: 44px;
+          @include onlylarge(1024px){
+            margin-bottom: 20px;
+          } 
+        }
+  
+        .txt-two{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #888888;
+          width: 270px; 
+          margin-bottom: 15px;
+        }
+  
+        form{
+          @include onlylarge(1024px){
+            display: flex;
+          } 
+          .first-inpt{
+            width: 270px;
+            border: 1px solid #AAAAAA;
+            border-radius: 10px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 14px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px; 
+            @include onlylarge(1024px){
+             width: 100%;
+            } 
+  
+          }
+  
+          .second-inpt{
+            background-image: url(..//images/arrrr.svg);
+            background-repeat: no-repeat;
+            width: 35px;
+            height: 35px;
+            border: none;
+            background-color:#3772FF ;
+            color: #3772FF;
+            border-radius: 50%;
+            padding-left: 27px;
+            background-position: center;
+            position: relative;
+            left: -47px; 
+            @include onlylarge(1024px){
+              top: 8px;
+            } 
+  
+          }
+        }
+      }
+    }
+    .copy{
+      margin-top: 87px;
+      text-align: center;
+      margin-bottom: 29px;
+      @include onlylarge(1024px){
+        margin-top: 50px;
+      } 
+      .txt-three{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #AAAAAA; 
+      }
+    }
+  }
