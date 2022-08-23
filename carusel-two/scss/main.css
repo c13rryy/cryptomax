@@ -1,0 +1,236 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*************/
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* __ */
+.container-three {
+  margin-top: 198px;
+  font-family: 'DM Sans';
+}
+
+@media only screen and (max-width: 1300px) {
+  .container-three {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-three {
+    margin-top: 50px;
+  }
+}
+
+.container-three h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #000000;
+}
+
+.container-three .mygg {
+  margin-top: 59px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-three .mygg {
+    margin-top: 25px;
+  }
+}
+
+.container-three .mygg .mygg-two .mygg-three {
+  width: 270px;
+}
+
+.container-three .mygg .mygg-two .mygg-three .images {
+  text-align: center;
+}
+
+.container-three .mygg .mygg-two .mygg-three .txt-info {
+  background: #F3F4F5;
+  border-radius: 15px;
+  margin-top: -42px;
+}
+
+.container-three .mygg .mygg-two .mygg-three .txt-info .txt {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  text-align: center;
+  padding-top: 15px;
+  padding-top: 55px;
+}
+
+.container-three .mygg .mygg-two .mygg-three .txt-info .str {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.container-three .mygg .mygg-two .mygg-three .txt-info .txt-two {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+  border-bottom: 1px solid #DDDDDD;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container-three .mygg .mygg-two .mygg-three .txt-info form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-three .mygg .mygg-two .mygg-three .txt-info form button {
+  width: 80px;
+  background: #9757D7;
+  border-radius: 7px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.container-three .mygg .mygg-two .mygg-three .txt-info form button img {
+  padding-right: 10px;
+}
+
+.container-three .mygg .mygg-two .mygg-three .txt-info form button:hover {
+  background: #000000;
+}
+
+.mygg .swiper-button-prev::after,
+.mygg .swiper-button-next::after {
+  color: #666666;
+  font-size: 3px;
+  border: 1.5px solid #CCCCCC;
+  border-radius: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(..//images/sde.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 1240px) {
+  .mygg .swiper-button-prev::after,
+  .mygg .swiper-button-next::after {
+    display: none;
+  }
+}
+
+.mygg .swiper-button-next::after {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  position: fixed;
+  z-index: 999;
+  margin-right: -109px;
+}
+
+.mygg .swiper-button-prev::after {
+  position: fixed;
+  z-index: 999;
+  margin-left: -109px;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  width: 0;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  width: 0;
+}
+
+/* scrollbar */
+.mygg .swiper-scrollbar-drag {
+  cursor: pointer;
+  background-color: blue;
+}
+/*# sourceMappingURL=main.css.map */
